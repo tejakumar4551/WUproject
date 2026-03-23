@@ -1,9 +1,5 @@
 # Playwright API Automation Framework
 
-A clean, medium-level API automation framework built with Playwright and JavaScript.
-Designed for a 5-year experience level — readable, maintainable, no unnecessary complexity.
-
----
 
 ## Project Structure
 
@@ -83,7 +79,6 @@ npm run report
 
 ## JavaScript Concepts Used
 
-Every concept in this framework maps to something you have already learned:
 
 | File | Concepts used |
 |---|---|

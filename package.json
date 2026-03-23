@@ -1,0 +1,31 @@
+{
+  "name": "pw-api-framework",
+  "version": "1.0.0",
+  "description": "Playwright API Automation Framework",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --project=smoke",
+    "test:regression": "playwright test --project=regression",
+    "test:integration": "playwright test --project=integration",
+    "test:debug": "LOG_LEVEL=debug LOG_CONSOLE=true playwright test",
+    "test:staging": "ENV=staging playwright test",
+    "report": "playwright show-report reports/html",
+    "logs": "cat reports/logs/combined.log",
+    "logs:errors": "cat reports/logs/error.log"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.58.2",
+    "ajv": "^8.18.0",
+    "ajv-formats": "^2.1.1",
+    "dotenv": "^16.6.1",
+    "winston": "^3.19.0"
+  },
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
